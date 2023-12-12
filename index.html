@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="script.js">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <nav></nav>
+        <h1>Seven Segment Display</h1>
+        <h3>by Ady Ulil Amri</h3>
+    </header>
+    <main>
+        <div class="keypad">
+            <button onclick="inputNumber(1)">1</button>
+            <button onclick="inputNumber(2)">2</button>
+            <button onclick="inputNumber(3)">3</button>
+            <button onclick="inputNumber(4)">4</button>
+            <button onclick="inputNumber(5)">5</button>
+            <button onclick="inputNumber(6)">6</button>
+            <button onclick="inputNumber(7)">7</button>
+            <button onclick="inputNumber(8)">8</button>
+            <button onclick="inputNumber(9)">9</button>
+            <button onclick="inputNumber(0)">0</button>
+        </div>
+
+        <div class="segment">
+            <svg width="130" height="240" viewBox="0 0 260 480">
+                <path d="M 0 20 L 20 40 L 180 40 L 200 20 L 180 0 L 20 0 Z"></path>
+            </svg>
+        </div>
+    </main>
+    <footer>
+
+    </footer>
+    
+    <aside>
+
+    </aside>
+</body>
+</html>
