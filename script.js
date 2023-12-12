@@ -1,20 +1,20 @@
 function inputNumber(number) {
     const input = number;
-    const hasil = truthTable(input);
-    tampilkanHasil(hasil);
-    konversiBiner(input);
+    const result = truthTable(input);
+    showResult(result);
+    convertToBinary(input);
 }
 //amaaaaaan
-function konversiBiner(input){
-    const biner = input.toString(2).padStart(4, "0");
-    document.getElementById("w").textContent = biner[0];
-    document.getElementById("x").textContent = biner[1];
-    document.getElementById("y").textContent = biner[2];
-    document.getElementById("z").textContent = biner[3];
+function convertToBinary(input){
+    const binary = input.toString(2).padStart(4, "0");
+    document.getElementById("w").textContent = binary[0];
+    document.getElementById("x").textContent = binary[1];
+    document.getElementById("y").textContent = binary[2];
+    document.getElementById("z").textContent = binary[3];
 }
 //amaaaaaaan
-function truthTable(desimal){
-    const biner = [
+function truthTable(decimal){
+    const binary = [
         "1111110", // 0
         "0110000", // 1
         "1101101", // 2
@@ -26,17 +26,17 @@ function truthTable(desimal){
         "1111111", // 8
         "1111011"  // 9
     ];
-    const digitBiner = biner[desimal].split('').map(Number);
+    const binaryDigits = binary[decimal].split('').map(Number);
     return{
-        A: digitBiner[0], B: digitBiner[1], C: digitBiner[2], D: digitBiner[3], E: digitBiner[4], F: digitBiner[5], G: digitBiner[6]
+        A: binaryDigits[0], B: binaryDigits[1], C: binaryDigits[2], D: binaryDigits[3], E: binaryDigits[4], F: binaryDigits[5], G: binaryDigits[6]
     }
 }
 
-function tampilkanHasil(hasil) {
+function showResult(result) {
     const segments = ['A', 'B', 'C', 'D', 'E', 'F', 'G'];
 
     segments.forEach(segment => {
-        const value = hasil[segment];
+        const value = result[segment];
         const element = document.getElementById(segment);
         const outputElement = document.getElementById(`binary${segment}`);
     
