@@ -40,7 +40,7 @@ function showResult(result) {
         const element = document.getElementById(segment);
         const outputElement = document.getElementById(`binary${segment}`);
     
-        element.setAttribute("fill", value === 1 ? "rbg(9, 9, 9)" : "rgb(204, 204, 204)");
+        element.setAttribute("fill", value === 1 ? "rgb(9, 9, 9)" : "rgb(204, 204, 204)");
         outputElement.textContent = value;
       });
 }
