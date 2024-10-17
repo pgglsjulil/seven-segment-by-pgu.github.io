@@ -1,5 +1,5 @@
 ```javascript
-class About extends Me {
+class About The Project {
   constructor() {
     this.name = "Ady Ulil Amri";
     this.pronouns = "He" | "Him";
